@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Pr Gilbert Bonkoungou | Chirurgien - Pionnier de la Laparoscopie au Burkina</title>
+    <meta name="description" content="Pr Gilbert Bonkoungou, Pr Agrégé de chirurgie générale, pionnier de la chirurgie laparoscopique au Burkina Faso depuis 2005. Expert en chirurgie digestive, thoracique et vasculaire à la Clinique Wendtoin.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #ffffff;
+            color: #2c2c2c;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        h1, h2, h3, .logo h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        .section-title {
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #1a2a3a;
+        }
+
+        .section-subtitle {
+            font-size: 0.85rem;
+            color: #b8860b;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 48px;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInLeft {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateX(30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes shake {
+            0%,100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+
+        .animate-fade-up {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .animate-fade-left {
+            animation: fadeInLeft 0.6s ease forwards;
+        }
+
+        .animate-fade-right {
+            animation: fadeInRight 0.6s ease forwards;
+        }
+
+        .animate-scale {
+            animation: scaleIn 0.5s ease forwards;
+        }
+
+        .delay-1 { animation-delay: 0.1s; opacity: 0; }
+        .delay-2 { animation-delay: 0.2s; opacity: 0; }
+        .delay-3 { animation-delay: 0.3s; opacity: 0; }
+        .delay-4 { animation-delay: 0.4s; opacity: 0; }
+        .delay-5 { animation-delay: 0.5s; opacity: 0; }
+
+        .scroll-animate {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .scroll-animate.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(255,255,255,0.98);
+            backdrop-filter: blur(4px);
+            z-index: 1000;
+            padding: 20px 0;
+            border-bottom: 1px solid #f0f0f0;
+            transition: padding 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        header.scrolled {
+            padding: 12px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        .header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h2 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .logo h2:hover {
+            transform: scale(1.02);
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            font-weight: 300;
+            color: #b8860b;
+            transition: color 0.3s ease;
+        }
+
+        .logo:hover span {
+            color: #1a2a3a;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #2c2c2c;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #b8860b;
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        nav a:hover {
+            color: #b8860b;
+        }
+
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-menu:hover {
+            transform: rotate(90deg);
+        }
+
+        .hero {
+            padding: 80px 0 100px;
+            background: #fefaf5;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: stretch;
+        }
+
+        .doctor-portrait {
+            background: #e8e0d5;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px -15px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            height: 580px;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .doctor-portrait:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 30px 50px -20px rgba(0,0,0,0.2);
+        }
+
+        .doctor-portrait .img-wrapper {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: #e8e0d5;
+            min-height: 0;
+        }
+
+        .doctor-portrait img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            object-position: center top;
+            transition: transform 0.4s ease;
+        }
+
+        .doctor-portrait:hover img {
+            transform: scale(1.02);
+        }
+
+        .portrait-caption {
+            padding: 16px 0 8px;
+            font-size: 0.75rem;
+            color: #8a8a8a;
+            letter-spacing: 0.5px;
+            text-align: center;
+            background: #e8e0d5;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 580px;
+        }
+
+        .hero-content h4 {
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #b8860b;
+            margin-bottom: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.8rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            color: #1a2a3a;
+        }
+
+        .hero-content p {
+            font-size: 1.05rem;
+            color: #5a5a5a;
+            margin-bottom: 32px;
+            max-width: 90%;
+        }
+
+        .badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+
+        .badge {
+            background: #1a2a3a;
+            color: white;
+            padding: 6px 14px;
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .badge:hover {
+            background: #b8860b;
+            transform: translateY(-2px);
+        }
+
+        .badge-gold {
+            background: #b8860b;
+        }
+
+        .badge-gold:hover {
+            background: #1a2a3a;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .btn-primary {
+            background: #1a2a3a;
+            color: white;
+            padding: 12px 32px;
+            border-radius: 0;
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255,255,255,0.1);
+            transition: left 0.3s ease;
+        }
+
+        .btn-primary:hover::before {
+            left: 0;
+        }
+
+        .btn-primary:hover {
+            background: #b8860b;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #1a2a3a;
+            padding: 12px 32px;
+            border-radius: 0;
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            border: 1px solid #1a2a3a;
+        }
+
+        .btn-outline:hover {
+            background: #1a2a3a;
+            color: white;
+            border-color: #1a2a3a;
+            transform: translateY(-2px);
+        }
+
+        .btn-loading {
+            position: relative;
+            pointer-events: none;
+            opacity: 0.8;
+        }
+
+        .btn-loading::after {
+            content: '';
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid white;
+            border-top-color: transparent;
+            border-radius: 50%;
+            animation: spin 0.6s linear infinite;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+
+        .form-error {
+            border-bottom-color: #dc3545 !important;
+            animation: shake 0.3s ease-in-out;
+        }
+
+        .about {
+            padding: 90px 0;
+            background: white;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 24px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            color: #4a4a4a;
+            line-height: 1.7;
+        }
+
+        .about-highlight {
+            background: #fefaf5;
+            padding: 20px;
+            border-left: 4px solid #b8860b;
+            margin: 24px 0;
+            transition: all 0.3s ease;
+        }
+
+        .about-highlight:hover {
+            background: #fff;
+            transform: translateX(5px);
+        }
+
+        .signature {
+            margin-top: 32px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            font-style: italic;
+            color: #b8860b;
+        }
+
+        .expertise {
+            background: #fefaf5;
+            padding: 90px 0;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .expertise-card {
+            background: white;
+            padding: 32px 24px;
+            text-align: center;
+            border: 1px solid #eee6dd;
+            transition: all 0.3s ease;
+        }
+
+        .expertise-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px -15px rgba(0,0,0,0.1);
+            border-color: #b8860b;
+        }
+
+        .expertise-card i {
+            font-size: 2rem;
+            color: #b8860b;
+            margin-bottom: 16px;
+            transition: transform 0.3s ease;
+        }
+
+        .expertise-card:hover i {
+            transform: scale(1.1);
+        }
+
+        .expertise-card h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+
+        .expertise-card p {
+            font-size: 0.85rem;
+            color: #6a6a6a;
+        }
+
+        .parcours {
+            padding: 90px 0;
+            background: white;
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 24px;
+            padding: 20px;
+            background: #fefaf5;
+            border-left: 4px solid #b8860b;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-item:hover {
+            transform: translateX(10px);
+            background: #fff;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        .timeline-year {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #b8860b;
+            min-width: 180px;
+        }
+
+        .timeline-content h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .timeline-content p {
+            color: #6a6a6a;
+            font-size: 0.9rem;
+        }
+
+        .distinctions {
+            background: #fefaf5;
+            padding: 90px 0;
+        }
+
+        .distinctions-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .distinction-card {
+            background: white;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid #eee6dd;
+            transition: all 0.3s ease;
+        }
+
+        .distinction-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px -15px rgba(0,0,0,0.1);
+            border-color: #b8860b;
+        }
+
+        .distinction-card i {
+            font-size: 2.5rem;
+            color: #b8860b;
+            margin-bottom: 16px;
+            transition: transform 0.3s ease;
+        }
+
+        .distinction-card:hover i {
+            transform: scale(1.15);
+        }
+
+        .distinction-card h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .hopitaux {
+            padding: 90px 0;
+            background: white;
+        }
+
+        .hopitaux-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .hopital-card {
+            background: #fefaf5;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid #eee6dd;
+            transition: all 0.3s ease;
+        }
+
+        .hopital-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -10px rgba(0,0,0,0.1);
+        }
+
+        .hopital-card i {
+            font-size: 2rem;
+            color: #b8860b;
+            margin-bottom: 16px;
+            transition: transform 0.3s ease;
+        }
+
+        .hopital-card:hover i {
+            transform: scale(1.1);
+        }
+
+        .videos {
+            padding: 90px 0;
+            background: #fefaf5;
+        }
+
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .video-card {
+            background: white;
+            border: 1px solid #eee6dd;
+            border-radius: 4px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .video-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px -12px rgba(0,0,0,0.15);
+            border-color: #b8860b;
+        }
+
+        .video-thumbnail {
+            background: #1a2a3a;
+            aspect-ratio: 16/9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #b8860b;
+            transition: all 0.3s ease;
+        }
+
+        .video-card:hover .video-thumbnail {
+            background: #b8860b;
+            color: white;
+        }
+
+        .video-card h4 {
+            padding: 20px 20px 10px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+        }
+
+        .video-card p {
+            padding: 0 20px 20px;
+            color: #6a6a6a;
+            font-size: 0.85rem;
+        }
+
+        .contact {
+            background: #fefaf5;
+            padding: 90px 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-info p {
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-info p:hover {
+            transform: translateX(5px);
+            color: #b8860b;
+        }
+
+        .contact-info i {
+            width: 24px;
+            color: #b8860b;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-info p:hover i {
+            transform: scale(1.2);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 14px 0;
+            border: none;
+            border-bottom: 1px solid #ddd6ce;
+            background: transparent;
+            margin-bottom: 24px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-bottom-color: #b8860b;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            padding: 48px 0;
+            text-align: center;
+            background: #1a2a3a;
+            color: #cbd5e1;
+            font-size: 0.75rem;
+        }
+
+        footer a {
+            color: #b8860b;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        @media (max-width: 900px) {
+            .hero-grid, .about-grid, .contact-grid, .expertise-grid, .videos-grid, .distinctions-grid, .hopitaux-grid {
+                grid-template-columns: 1fr;
+            }
+            .doctor-portrait {
+                height: auto;
+                max-height: 520px;
+            }
+            .doctor-portrait .img-wrapper {
+                min-height: 280px;
+                width: 100%;
+            }
+            .doctor-portrait img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center 20%;
+            }
+            .hero-content {
+                height: auto;
+                margin-top: 24px;
+            }
+            .button-group {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .button-group .btn-primary,
+            .button-group .btn-outline {
+                text-align: center;
+                justify-content: center;
+            }
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background: white;
+                padding: 20px;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                gap: 1rem;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            }
+            .mobile-menu {
+                display: block;
+            }
+            nav ul.active {
+                display: flex;
+            }
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            .container {
+                padding: 0 24px;
+            }
+            .timeline-item {
+                flex-direction: column;
+                gap: 8px;
+            }
+            .timeline-year {
+                min-width: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .doctor-portrait {
+                max-height: 460px;
+            }
+            .doctor-portrait .img-wrapper {
+                min-height: 260px;
+            }
+            .doctor-portrait img {
+                object-position: center 15%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-flex">
+        <div class="logo">
+            <h2>Pr <span>Bonkoungou</span></h2>
+        </div>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#distinctions">Distinctions</a></li>
+                <li><a href="#videos">Médias</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<section id="accueil" class="hero">
+    <div class="container hero-grid">
+        <div class="doctor-portrait scroll-animate">
+            <div class="img-wrapper">
+                <img src="pr_gilbert/image_pr.jpeg" alt="Pr Gilbert Bonkoungou - Chirurgien, pionnier de la laparoscopie">
+            </div>
+            <div class="portrait-caption">Pr Agrégé de Chirurgie Générale · Pionnier de la Laparoscopie au Burkina</div>
+        </div>
+        <div class="hero-content">
+            <h4 class="scroll-animate delay-1">Pr Agrégé de Chirurgie Générale · CAMES</h4>
+            <h1 class="scroll-animate delay-2">Pr Gilbert Bonkoungou</h1>
+            <p class="scroll-animate delay-3">Chirurgien général, digestif, thoracique et vasculaire. Pionnier de la <strong>chirurgie laparoscopique au Burkina Faso depuis 2005</strong>. Fondateur de la Clinique Wendtoin à Ouagadougou.</p>
+            <div class="badges scroll-animate delay-4">
+                <span class="badge badge-gold">Agrégation CAMES 2014</span>
+                <span class="badge">Laparoscopie pionnier</span>
+            </div>
+            <div class="button-group scroll-animate delay-5">
+                <a href="#contact" class="btn-primary">Prendre rendez-vous <i class="fas fa-arrow-right"></i></a>
+                <a href="https://vinkedev.github.io/clinique-wendtoin/" target="_blank" rel="noopener noreferrer" class="btn-outline">
+                    <i class="fas fa-hospital"></i> Clinique Wendtoin
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="a-propos" class="about">
+    <div class="container about-grid">
+        <div class="about-text">
+            <h3 class="scroll-animate">La chirurgie comme un art</h3>
+            <p class="scroll-animate"><strong>Professeur Gilbert Bonkoungou</strong> est <strong>Pr Agrégé de chirurgie générale</strong>. Il a été admis au concours d'agrégation du <strong>CAMES en novembre 2014 à Yaoundé, Cameroun</strong>.</p>
+            <p class="scroll-animate">Formé en Europe et au Burkina, il est <strong>l'un des pionniers de la chirurgie laparoscopique au Burkina Faso depuis 2005</strong>, une technique mini-invasive qui permet une récupération plus rapide pour les patients.</p>
+            <div class="about-highlight scroll-animate">
+                <p><strong>Spécialités :</strong> Chirurgie générale et digestive, Chirurgie laparoscopique, Chirurgie thoracique et vasculaire</p>
+            </div>
+            <p class="scroll-animate">Sa philosophie : chaque patient est unique. La décision chirurgicale se prend ensemble, après un bilan approfondi et une explication claire des bénéfices et des risques. Fondateur de la <strong>Clinique Wendtoin</strong>, il y réunit une équipe pluridisciplinaire de haut niveau.</p>
+            <div class="signature scroll-animate">— Pr Gilbert Bonkoungou</div>
+        </div>
+        <div>
+            <img src="pr_gilbert/vue_wendtoin.jpg" alt="Clinique Wendtoin" style="width:100%; border-radius:4px;" class="scroll-animate">
+        </div>
+    </div>
+</section>
+
+<section id="parcours" class="parcours">
+    <div class="container">
+        <h2 class="section-title scroll-animate">Parcours hospitalier</h2>
+        <div class="section-subtitle scroll-animate">Une carrière au service des patients</div>
+        <div class="timeline">
+            <div class="timeline-item scroll-animate">
+                <div class="timeline-year">CHU Yalgado Ouédraogo</div>
+                <div class="timeline-content">
+                    <h4>Assistant - Chirurgie</h4>
+                    <p>Assistant au service de chirurgie générale et digestive</p>
+                </div>
+            </div>
+            <div class="timeline-item scroll-animate">
+                <div class="timeline-year">CHU Blaise Compaoré</div>
+                <div class="timeline-content">
+                    <h4>Chirurgien Senior</h4>
+                    <p>Prise en charge des patients en chirurgie thoracique et vasculaire</p>
+                </div>
+            </div>
+            <div class="timeline-item scroll-animate">
+                <div class="timeline-year">Clinique Wendtoin</div>
+                <div class="timeline-content">
+                    <h4>Fondateur & Chirurgien</h4>
+                    <p>Création de la Clinique Wendtoin, établissement privé de référence à Ouagadougou</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="expertise" class="expertise">
+    <div class="container">
+        <h2 class="section-title scroll-animate">Domaines d'expertise</h2>
+        <div class="section-subtitle scroll-animate">Chirurgie générale et spécialisée</div>
+        <div class="expertise-grid">
+            <div class="expertise-card scroll-animate"><i class="fas fa-stomach"></i><h4>Chirurgie digestive</h4><p>Estomac, foie, voies biliaires, pancréas, intestins</p></div>
+            <div class="expertise-card scroll-animate"><i class="fas fa-microscope"></i><h4>Chirurgie laparoscopique</h4><p>Mini-invasive · Récupération rapide · Pionnier depuis 2005</p></div>
+            <div class="expertise-card scroll-animate"><i class="fas fa-heartbeat"></i><h4>Chirurgie vasculaire</h4><p>Anévrismes, pontages, maladies veineuses</p></div>
+            <div class="expertise-card scroll-animate"><i class="fas fa-lungs"></i><h4>Chirurgie thoracique</h4><p>Poumon, médiastin, plèvre, tumeurs thoraciques</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="distinctions" class="distinctions">
+    <div class="container">
+        <h2 class="section-title scroll-animate">Distinctions & Reconnaissances</h2>
+        <div class="section-subtitle scroll-animate">Un parcours d'excellence</div>
+        <div class="distinctions-grid">
+            <div class="distinction-card scroll-animate"><i class="fas fa-medal"></i><h4>Agrégation du CAMES</h4><p>Admis au concours d'agrégation du CAMES en novembre 2014 à Yaoundé, Cameroun</p></div>
+            <div class="distinction-card scroll-animate"><i class="fas fa-award"></i><h4>Pionnier de la Laparoscopie</h4><p>Premières interventions chirurgicales vidéo-assistées réalisées en 2005</p></div>
+            <div class="distinction-card scroll-animate"><i class="fas fa-chalkboard-user"></i><h4>Pr Agrégé</h4><p>Plus haut grade universitaire en chirurgie générale</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="hopitaux">
+    <div class="container">
+        <h2 class="section-title scroll-animate">Lieux d'exercice</h2>
+        <div class="section-subtitle scroll-animate">Une expertise reconnue dans plusieurs établissements</div>
+        <div class="hopitaux-grid">
+            <div class="hopital-card scroll-animate"><i class="fas fa-hospital"></i><h4>CHU Yalgado Ouédraogo</h4><p>Ouagadougou · Assistant</p></div>
+            <div class="hopital-card scroll-animate"><i class="fas fa-hospital"></i><h4>CHU Blaise Compaoré</h4><p>Ouagadougou · Chirurgien Senior</p></div>
+            <div class="hopital-card scroll-animate"><i class="fas fa-clinic-medical"></i><h4>Clinique Wendtoin</h4><p>Fondateur & Chirurgien</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="videos" class="videos">
+    <div class="container">
+        <h2 class="section-title scroll-animate">Le Pr Bonkoungou en vidéo & dans la presse</h2>
+        <div class="section-subtitle scroll-animate">Découvrez ses interventions, conférences et interviews</div>
+        <div class="videos-grid">
+            <a href="https://web.facebook.com/reel/645204957720787" target="_blank" rel="noopener noreferrer" class="video-card scroll-animate">
+                <div class="video-thumbnail"><i class="fab fa-facebook"></i></div>
+                <h4>Pr Gilbert BONKOUGOU - Maladie hémorroïdaire</h4>
+                <p>Les hémorroïdes expliquées par le Pr Gilbert BONKOUGOU</p>
+            </a>
+            <a href="https://web.facebook.com/reel/1634296984276574" target="_blank" rel="noopener noreferrer" class="video-card scroll-animate">
+                <div class="video-thumbnail"><i class="fab fa-facebook"></i></div>
+                <h4>Pr Gilbert BONKOUGOU - Varices des membres inférieurs</h4>
+                <p>Prise en charge des varices par le Pr Gilbert BONKOUGOU</p>
+            </a>
+            <a href="https://web.facebook.com/reel/953192637302228" target="_blank" rel="noopener noreferrer" class="video-card scroll-animate">
+                <div class="video-thumbnail"><i class="fab fa-facebook"></i></div>
+                <h4>Pr Gilbert BONKOUGOU - Varices des membres inférieurs</h4>
+                <p>Prise en charge des varices par le Pr Gilbert BONKOUGOU</p>
+            </a>
+            <a href="https://web.facebook.com/reel/2986569131572491" target="_blank" rel="noopener noreferrer" class="video-card scroll-animate">
+                <div class="video-thumbnail"><i class="fab fa-facebook"></i></div>
+                <h4>Pr Gilbert BONKOUGOU - Gynécomastie</h4>
+                <p>Un homme qui "pousse des seins" ? Cela intrigue, inquiète, fait peur. C'est une gynécomastie</p>
+            </a>
+            <a href="https://web.facebook.com/reel/1879660532188010" target="_blank" rel="noopener noreferrer" class="video-card scroll-animate">
+                <div class="video-thumbnail"><i class="fab fa-facebook"></i></div>
+                <h4>Pr Gilbert BONKOUGOU - Hypertrophie mammaire</h4>
+                <p>L'hypertrophie des seins (forte poitrine) : en dehors du caractère inesthétique, peut causer des douleurs des épaules et du dos</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container contact-grid">
+        <div>
+            <h2 class="section-title scroll-animate" style="margin-bottom: 24px;">Consultation</h2>
+            <div class="contact-info">
+                <p class="scroll-animate"><i class="fas fa-phone-alt"></i> +226 51 00 06 47 (Prise de rendez-vous)</p>
+                <p class="scroll-animate"><i class="fab fa-whatsapp"></i> +226 51 00 06 47 (WhatsApp)</p>
+                <p class="scroll-animate"><i class="fas fa-envelope"></i> clinwend@gmail.com</p>
+                <p class="scroll-animate"><i class="fas fa-map-marker-alt"></i> Boulevard des Tensoba, Secteur n°25<br>Cissin, Ouagadougou, Burkina Faso</p>
+                <p class="scroll-animate"><i class="fas fa-clock"></i> Consultations : Lundi – Vendredi : 7h30 – 19h30<br>🚨 Urgences 24h/24 - 7j/7</p>
+            </div>
+        </div>
+        <form id="whatsappForm" class="contact-form">
+            <input type="text" id="nom" class="scroll-animate" placeholder="Nom complet" required>
+            <textarea id="message" class="scroll-animate" rows="4" placeholder="Votre message (date souhaitée, horaire, etc.)"></textarea>
+            <button type="submit" class="btn-primary scroll-animate" id="submitRdvBtn" style="background:#b8860b;">Envoyer la demande <i class="fab fa-whatsapp"></i></button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>© 2025 Pr Gilbert Bonkoungou — Pr Agrégé de Chirurgie Générale — Pionnier de la Laparoscopie au Burkina Faso (depuis 2005) — Fondateur de la Clinique Wendtoin</p>
+        <p style="margin-top: 12px;"><a href="#accueil">Retour en haut</a> | <a href="https://wa.me/22651000647">WhatsApp</a></p>
+    </div>
+</footer>
+
+<script>
+    const mobileBtn = document.getElementById('mobileBtn');
+    const navList = document.getElementById('nav-list');
+    if (mobileBtn) {
+        mobileBtn.addEventListener('click', () => navList.classList.toggle('active'));
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
+            if (navList) navList.classList.remove('active');
+        });
+    });
+
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
+    const animateElements = document.querySelectorAll('.scroll-animate');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    animateElements.forEach(el => observer.observe(el));
+
+    const whatsappForm = document.getElementById('whatsappForm');
+    if (whatsappForm) {
+        whatsappForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const nom = document.getElementById('nom');
+            if (!nom.value.trim()) {
+                nom.classList.add('form-error');
+                setTimeout(() => nom.classList.remove('form-error'), 500);
+                alert('Veuillez remplir votre nom');
+                return;
+            }
+            const message = document.getElementById('message').value;
+            let whatsappMessage = `Bonjour Pr Gilbert Bonkoungou,%0A%0A📋 Demande de rendez-vous (Consultation générale)%0A`;
+            whatsappMessage += `👤 Nom : ${encodeURIComponent(nom.value.trim())}%0A`;
+            if (message) whatsappMessage += `📝 Message : ${encodeURIComponent(message)}%0A`;
+            whatsappMessage += `%0AMerci de me confirmer un créneau.`;
+            const btn = document.getElementById('submitRdvBtn');
+            btn.classList.add('btn-loading');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = 'Envoi en cours...';
+            setTimeout(() => {
+                window.open(`https://wa.me/22651000647?text=${whatsappMessage}`, '_blank');
+                whatsappForm.reset();
+                btn.classList.remove('btn-loading');
+                btn.innerHTML = originalText;
+            }, 500);
+        });
+    }
+</script>
+</body>
+</html>
